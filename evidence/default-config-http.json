@@ -1,0 +1,163 @@
+[
+  {
+    "profile": "default",
+    "result": {
+      "method": "GET",
+      "url": "http://localhost:8888/voitures/1",
+      "status": 200,
+      "response": {
+        "id": 1,
+        "marque": "Toyota",
+        "model": "Yaris",
+        "matricule": "A 25 333",
+        "clientId": 1,
+        "client": {
+          "id": 1,
+          "nom": "Rabab SELIMANI",
+          "age": 23.0
+        }
+      }
+    }
+  },
+  {
+    "profile": "default",
+    "result": {
+      "method": "GET",
+      "url": "http://localhost:8888/clients",
+      "status": 200,
+      "response": [
+        {
+          "id": 1,
+          "nom": "Rabab SELIMANI",
+          "age": 23.0
+        },
+        {
+          "id": 2,
+          "nom": "Amal RAMI",
+          "age": 22.0
+        },
+        {
+          "id": 3,
+          "nom": "Samir SAFI",
+          "age": 22.0
+        }
+      ]
+    }
+  },
+  {
+    "profile": "default",
+    "result": {
+      "method": "GET",
+      "url": "http://localhost:8888/client/1",
+      "status": 200,
+      "response": {
+        "id": 1,
+        "nom": "Rabab SELIMANI",
+        "age": 23.0
+      }
+    }
+  },
+  {
+    "profile": "default",
+    "result": {
+      "method": "GET",
+      "url": "http://localhost:8888/SERVICE-CLIENT/clients",
+      "status": 200,
+      "response": [
+        {
+          "id": 1,
+          "nom": "Rabab SELIMANI",
+          "age": 23.0
+        },
+        {
+          "id": 2,
+          "nom": "Amal RAMI",
+          "age": 22.0
+        },
+        {
+          "id": 3,
+          "nom": "Samir SAFI",
+          "age": 22.0
+        }
+      ]
+    }
+  },
+  {
+    "profile": "default",
+    "result": {
+      "method": "GET",
+      "url": "http://localhost:8888/SERVICE-VOITURE/voitures/1",
+      "status": 200,
+      "response": {
+        "id": 1,
+        "marque": "Toyota",
+        "model": "Yaris",
+        "matricule": "A 25 333",
+        "clientId": 1,
+        "client": {
+          "id": 1,
+          "nom": "Rabab SELIMANI",
+          "age": 23.0
+        }
+      }
+    }
+  },
+  {
+    "profile": "static",
+    "result": {
+      "method": "GET",
+      "url": "http://localhost:8888/clients",
+      "status": 200,
+      "response": [
+        {
+          "id": 1,
+          "nom": "Rabab SELIMANI",
+          "age": 23.0
+        },
+        {
+          "id": 2,
+          "nom": "Amal RAMI",
+          "age": 22.0
+        },
+        {
+          "id": 3,
+          "nom": "Samir SAFI",
+          "age": 22.0
+        }
+      ]
+    }
+  },
+  {
+    "profile": "static",
+    "result": {
+      "method": "GET",
+      "url": "http://localhost:8888/client/1",
+      "status": 200,
+      "response": {
+        "id": 1,
+        "nom": "Rabab SELIMANI",
+        "age": 23.0
+      }
+    }
+  },
+  {
+    "profile": "static",
+    "result": {
+      "method": "GET",
+      "url": "http://localhost:8888/voitures/1",
+      "status": 200,
+      "response": {
+        "id": 1,
+        "marque": "Toyota",
+        "model": "Yaris",
+        "matricule": "A 25 333",
+        "clientId": 1,
+        "client": {
+          "id": 1,
+          "nom": "Rabab SELIMANI",
+          "age": 23.0
+        }
+      }
+    }
+  }
+]
