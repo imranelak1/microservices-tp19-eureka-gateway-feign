@@ -1,0 +1,38 @@
+server:
+  port: ${SERVER_PORT:8089}
+spring:
+  application:
+    name: SERVICE-VOITURE
+  datasource:
+    url: jdbc:h2:mem:carservicedb;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+eureka:
+      client:
+        service-url:
+          defaultZone: ${EUREKA_URL:http://localhost:8761/eureka/}
+        registry-fetch-interval-seconds: 2
+        initial-instance-info-replication-interval-seconds: 1
+      instance:
+        hostname: localhost
+        prefer-ip-address: true
+        ip-address: ${SERVICE_IP:127.0.0.1}
+        lease-renewal-interval-in-seconds: 5
+        instance-id: ${spring.application.name}:${server.port}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  endpoint:
+    health:
+      show-details: always
+spring.cloud.openfeign.client.config.default.connectTimeout: 3000
+spring.cloud.openfeign.client.config.default.readTimeout: 5000
